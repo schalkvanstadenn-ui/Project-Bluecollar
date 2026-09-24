@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Bluecollar — Outsourced Digital Marketing for Local Trades</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['Inter', 'system-ui', 'sans-serif'],
+                },
+                colors: {
+                    pastel: {
+                        bg: '#FDF8F3',
+                        card: '#FFFFFF',
+                        border: '#EFE1D1',
+                        text: '#4A3F35',
+                        heading: '#2B2420',
+                        accent: '#D97A57',
+                        accentHover: '#C2643F',
+                        secondary: '#E3A857',
+                        softBg: '#FBEEE0',
+                        badge: '#F6DCC5',
+                        badgeText: '#9C4A1F',
+                        muted: '#8A7A6B',
+                    }
+                }
+            }
+        }
+    }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #FDF8F3;
+    scroll-behavior: smooth;
+  }
+  .badge-check li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .badge-check li i {
+    color: #D97A57;
+    margin-top: 3px;
+    font-size: 11px;
+  }
+  details > summary {
+    list-style: none;
+    cursor: pointer;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  details[open] .faq-chevron {
+    transform: rotate(180deg);
+  }
+</style>
+</head>
+<body class="text-pastel-text font-sans">
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-pastel-bg/90 backdrop-blur border-b border-pastel-border">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="#home" class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-pastel-accent flex items-center justify-center text-white font-bold text-sm">PB</div>
+            <span class="font-extrabold text-pastel-heading text-lg">Project Bluecollar</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-pastel-text">
+            <a href="#home" class="hover:text-pastel-accent transition">Home</a>
+            <a href="#why-us" class="hover:text-pastel-accent transition">Why Us</a>
+            <a href="#packages" class="hover:text-pastel-accent transition">Packages</a>
+            <a href="#portfolio" class="hover:text-pastel-accent transition">Portfolio</a>
+            <a href="#contact" class="hover:text-pastel-accent transition">Contact</a>
+        </div>
+        <a href="#packages" class="bg-pastel-accent hover:bg-pastel-accentHover text-white text-sm font-semibold px-5 py-2.5 rounded-xl transition shadow-sm">Get Started</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header id="home" class="px-6 pt-16 pb-14">
+    <div class="max-w-3xl mx-auto text-center space-y-6">
+        <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-pastel-badge text-pastel-badgeText text-xs font-bold uppercase tracking-wider">
+            Outsourced Digital Marketing for Local Trades
+        </div>
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-pastel-heading leading-tight">
+            Stop Chasing Leads. Make Your Trade Business <span class="text-pastel-accent">Easy to Find &amp; Hire.</span>
+        </h1>
+        <p class="text-base md:text-lg text-pastel-muted max-w-2xl mx-auto leading-relaxed">
+            We build, manage, and scale online visibility for plumbers, electricians, handymen, and contractors. Turn local search traffic into direct phone calls and enquiries.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+            <a href="#packages" class="w-full sm:w-auto bg-pastel-accent hover:bg-pastel-accentHover text-white font-semibold px-6 py-3 rounded-xl transition shadow-sm text-sm">Explore Subscription Packages</a>
+            <a href="#why-us" class="w-full sm:w-auto bg-white border border-pastel-border hover:bg-pastel-softBg text-pastel-heading font-semibold px-6 py-3 rounded-xl transition text-sm">Why We Are Unique</a>
+        </div>
+    </div>
+
+    <!-- Trust Bar -->
+    <div class="max-w-5xl mx-auto mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div class="bg-white border border-pastel-border rounded-xl p-4">
+            <p class="text-xs font-bold text-pastel-heading">100% Focused</p>
+            <p class="text-[11px] text-pastel-muted mt-1">On Trade Businesses</p>
+        </div>
+        <div class="bg-white border border-pastel-border rounded-xl p-4">
+            <p class="text-xs font-bold text-pastel-heading">Zero Lock-In</p>
+            <p class="text-[11px] text-pastel-muted mt-1">Month-to-Month Contracts</p>
+        </div>
+        <div class="bg-white border border-pastel-border rounded-xl p-4">
+            <p class="text-xs font-bold text-pastel-heading">Direct Lead Routing</p>
+            <p class="text-[11px] text-pastel-muted mt-1">Built-In Enquiry Integration</p>
+        </div>
+        <div class="bg-white border border-pastel-border rounded-xl p-4">
+            <p class="text-xs font-bold text-pastel-heading">Fast Deployment</p>
+            <p class="text-[11px] text-pastel-muted mt-1">Live Within 7 Days</p>
+        </div>
+    </div>
+</header>
+
+<!-- WHY US -->
+<section id="why-us" class="px-6 py-16 bg-pastel-softBg border-y border-pastel-border">
+    <div class="max-w-5xl mx-auto">
+        <div class="text-center max-w-xl mx-auto mb-10 space-y-2">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-pastel-heading">Why Project Bluecollar is Built Differently</h2>
+            <p class="text-sm text-pastel-muted">Traditional agencies charge thousands for bloated retainers. We deliver streamlined, lead-focused infrastructure built specifically for independent trade contractors.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div class="bg-white border border-pastel-border rounded-2xl p-6 space-y-2 shadow-sm">
+                <div class="w-9 h-9 rounded-lg bg-pastel-badge text-pastel-badgeText flex items-center justify-center"><i class="fa-solid fa-bullseye text-sm"></i></div>
+                <h3 class="font-bold text-pastel-heading">No Agency Fluff</h3>
+                <p class="text-pastel-muted text-sm leading-relaxed">We don't sell vanity likes or social media posts. Every package focuses strictly on local intent — getting your phone to ring.</p>
+            </div>
+            <div class="bg-white border border-pastel-border rounded-2xl p-6 space-y-2 shadow-sm">
+                <div class="w-9 h-9 rounded-lg bg-pastel-badge text-pastel-badgeText flex items-center justify-center"><i class="fa-solid fa-microphone text-sm"></i></div>
+                <h3 class="font-bold text-pastel-heading">Voice-to-Copy Onboarding</h3>
+                <p class="text-pastel-muted text-sm leading-relaxed">No long forms to fill out. Send a short voice note describing your business, and our systems structure your site copy and service area details automatically.</p>
+            </div>
+            <div class="bg-white border border-pastel-border rounded-2xl p-6 space-y-2 shadow-sm">
+                <div class="w-9 h-9 rounded-lg bg-pastel-badge text-pastel-badgeText flex items-center justify-center"><i class="fa-solid fa-phone text-sm"></i></div>
+                <h3 class="font-bold text-pastel-heading">Direct Contact Triggers</h3>
+                <p class="text-pastel-muted text-sm leading-relaxed">Your clients want quick answers. We embed one-tap Click-to-Call and enquiry routing into every page layout.</p>
+            </div>
+            <div class="bg-white border border-pastel-border rounded-2xl p-6 space-y-2 shadow-sm">
+                <div class="w-9 h-9 rounded-lg bg-pastel-badge text-pastel-badgeText flex items-center justify-center"><i class="fa-solid fa-file-invoice-dollar text-sm"></i></div>
+                <h3 class="font-bold text-pastel-heading">Transparent Subscriptions</h3>
+                <p class="text-pastel-muted text-sm leading-relaxed">Fixed monthly pricing with no hidden management fees. You keep full ownership of your domain and digital assets.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages" class="px-6 py-16">
+    <div class="max-w-5xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-pastel-heading">Flexible Marketing Tiers for Growing Trade Contractors</h2>
+            <p class="text-sm text-pastel-muted">Select the right package for your current operational capacity. Upgrade or adjust as your crew grows.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+            <!-- FOUNDATION -->
+            <div class="bg-white border border-pastel-border rounded-2xl p-6 flex flex-col justify-between space-y-6 shadow-sm">
+                <div class="space-y-4">
+                    <div>
+                        <span class="text-xs font-bold text-pastel-muted uppercase">Tier 01</span>
+                        <h3 class="text-xl font-bold text-pastel-heading">FOUNDATION</h3>
+                        <p class="text-pastel-accent font-medium text-xs">"Get Found"</p>
+                        <p class="text-[11px] text-pastel-muted mt-2">Owner-operators and new trade startups needing a professional digital identity.</p>
+                    </div>
+                    <div class="pt-3 border-t border-pastel-border">
+                        <span class="text-3xl font-extrabold text-pastel-heading">R1,250</span>
+                        <span class="text-pastel-muted text-xs">/ mo</span>
+                        <span class="text-xs text-pastel-muted block mt-1">Excl. VAT • R1,500 setup fee</span>
+                    </div>
+                    <ul class="badge-check text-xs text-pastel-text">
+                        <li><i class="fa-solid fa-circle-check"></i>Single-page high-converting website</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Google Business Profile setup & verification</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Click-to-Call & direct enquiry integration</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Google Maps listing optimization</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Automated review generation setup</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Free SSL certificate & fast local hosting</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="w-full bg-pastel-softBg hover:bg-pastel-badge text-pastel-heading font-semibold py-2.5 rounded-xl transition text-center block text-xs">Get Started</a>
+            </div>
+
+            <!-- GROWTH -->
+            <div class="bg-white border-2 border-pastel-accent rounded-2xl p-6 flex flex-col justify-between space-y-6 shadow-md relative mt-4 md:mt-0">
+                <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-pastel-accent text-white text-[10px] font-bold uppercase px-3 py-1 rounded-full shadow-sm">Most Popular</div>
+                <div class="space-y-4">
+                    <div>
+                        <span class="text-xs font-bold text-pastel-accent uppercase">Tier 02</span>
+                        <h3 class="text-xl font-bold text-pastel-heading">GROWTH</h3>
+                        <p class="text-pastel-accent font-medium text-xs">"Get Seen"</p>
+                        <p class="text-[11px] text-pastel-muted mt-2">Established contractors with 1–3 teams looking for steady local job inquiry volume.</p>
+                    </div>
+                    <div class="pt-3 border-t border-pastel-border">
+                        <span class="text-3xl font-extrabold text-pastel-heading">R3,450</span>
+                        <span class="text-pastel-muted text-xs">/ mo</span>
+                        <span class="text-xs text-pastel-muted block mt-1">Excl. VAT • R3,500 setup fee</span>
+                    </div>
+                    <ul class="badge-check text-xs text-pastel-text">
+                        <li><i class="fa-solid fa-circle-check"></i><strong>Everything in Foundation</strong></li>
+                        <li><i class="fa-solid fa-circle-check"></i>Multi-page website (Home, Services, Suburbs, Contact)</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Hyper-local SEO for suburbs & emergency keywords</li>
+                        <li><i class="fa-solid fa-circle-check"></i>2x monthly Google Business Profile posts</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Basic ad campaign structure setup</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Monthly search performance snapshot</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="w-full bg-pastel-accent hover:bg-pastel-accentHover text-white font-semibold py-2.5 rounded-xl transition text-center block text-xs shadow-sm">Start Growth Plan</a>
+            </div>
+
+            <!-- LEAD -->
+            <div class="bg-white border border-pastel-border rounded-2xl p-6 flex flex-col justify-between space-y-6 shadow-sm">
+                <div class="space-y-4">
+                    <div>
+                        <span class="text-xs font-bold text-pastel-muted uppercase">Tier 03</span>
+                        <h3 class="text-xl font-bold text-pastel-heading">LEAD</h3>
+                        <p class="text-pastel-accent font-medium text-xs">"Get Enquiries"</p>
+                        <p class="text-[11px] text-pastel-muted mt-2">Larger multi-crew operations needing consistent, high-intent call flow.</p>
+                    </div>
+                    <div class="pt-3 border-t border-pastel-border">
+                        <span class="text-3xl font-extrabold text-pastel-heading">R7,500</span>
+                        <span class="text-pastel-muted text-xs">/ mo</span>
+                        <span class="text-xs text-pastel-muted block mt-1">Excl. VAT • R6,500 setup fee</span>
+                    </div>
+                    <ul class="badge-check text-xs text-pastel-text">
+                        <li><i class="fa-solid fa-circle-check"></i><strong>Everything in Growth</strong></li>
+                        <li><i class="fa-solid fa-circle-check"></i>Dedicated Google Search Ads & landing funnels</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Call & enquiry lead attribution tracking</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Priority weekly campaign adjustments</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Monthly ROI review call & lead analysis</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Custom service area expansion pages</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="w-full bg-pastel-softBg hover:bg-pastel-badge text-pastel-heading font-semibold py-2.5 rounded-xl transition text-center block text-xs">Get Enquiries</a>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="max-w-2xl mx-auto mt-14 space-y-3">
+            <h3 class="text-xl font-bold text-pastel-heading text-center mb-6">Frequently Asked Questions</h3>
+
+            <details class="bg-white border border-pastel-border rounded-xl p-4">
+                <summary class="flex items-center justify-between font-semibold text-sm text-pastel-heading">
+                    Are there any hidden setup fees?
+                    <i class="fa-solid fa-chevron-down faq-chevron text-xs text-pastel-muted transition"></i>
+                </summary>
+                <p class="text-xs text-pastel-muted mt-3 leading-relaxed">No. The one-time setup fee for your chosen tier is disclosed upfront and covers your site build and profile configuration. There are no additional hidden charges beyond your monthly subscription.</p>
+            </details>
+
+            <details class="bg-white border border-pastel-border rounded-xl p-4">
+                <summary class="flex items-center justify-between font-semibold text-sm text-pastel-heading">
+                    Is ad spend included in the monthly fee?
+                    <i class="fa-solid fa-chevron-down faq-chevron text-xs text-pastel-muted transition"></i>
+                </summary>
+                <p class="text-xs text-pastel-muted mt-3 leading-relaxed">No. Your monthly subscription covers our management and campaign work. Any Google or Meta ad spend on Growth and Lead tiers is billed separately and directly to your own ad account, so you always see exactly where your budget goes.</p>
+            </details>
+
+            <details class="bg-white border border-pastel-border rounded-xl p-4">
+                <summary class="flex items-center justify-between font-semibold text-sm text-pastel-heading">
+                    Do I need to sign a long-term contract?
+                    <i class="fa-solid fa-chevron-down faq-chevron text-xs text-pastel-muted transition"></i>
+                </summary>
+                <p class="text-xs text-pastel-muted mt-3 leading-relaxed">No. All packages run on a flexible month-to-month basis. You can upgrade, downgrade, or cancel your subscription at any time.</p>
+            </details>
+
+            <details class="bg-white border border-pastel-border rounded-xl p-4">
+                <summary class="flex items-center justify-between font-semibold text-sm text-pastel-heading">
+                    How fast can my site go live?
+                    <i class="fa-solid fa-chevron-down faq-chevron text-xs text-pastel-muted transition"></i>
+                </summary>
+                <p class="text-xs text-pastel-muted mt-3 leading-relaxed">Most Foundation and Growth tier sites are designed, built, and deployed within 7 business days of receiving your business details and onboarding voice note.</p>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="px-6 py-16 bg-pastel-softBg border-y border-pastel-border">
+    <div class="max-w-5xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-pastel-heading">Real Results for Local Trade Specialists</h2>
+            <p class="text-sm text-pastel-muted">Explore how we help plumbers, electricians, and contractors build authority and capture local market share.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white border border-pastel-border rounded-2xl overflow-hidden shadow-sm">
+                <div class="h-36 bg-pastel-badge flex items-center justify-center text-pastel-accent">
+                    <i class="fa-solid fa-faucet-drip text-4xl"></i>
+                </div>
+                <div class="p-5 space-y-2">
+                    <span class="inline-block text-[10px] font-bold uppercase text-pastel-badgeText bg-pastel-badge px-2 py-1 rounded-full">Foundation Tier · Plumbing</span>
+                    <h3 class="font-bold text-pastel-heading text-sm">Emergency Plumbing Specialist</h3>
+                    <p class="text-xs text-pastel-muted leading-relaxed">Built a single-page conversion site and optimized Google Maps profile, generating 20+ direct enquiries in the first 30 days.</p>
+                </div>
+            </div>
+            <div class="bg-white border border-pastel-border rounded-2xl overflow-hidden shadow-sm">
+                <div class="h-36 bg-pastel-badge flex items-center justify-center text-pastel-accent">
+                    <i class="fa-solid fa-bolt text-4xl"></i>
+                </div>
+                <div class="p-5 space-y-2">
+                    <span class="inline-block text-[10px] font-bold uppercase text-pastel-badgeText bg-pastel-badge px-2 py-1 rounded-full">Growth Tier · Electrical</span>
+                    <h3 class="font-bold text-pastel-heading text-sm">Residential Electrical Services</h3>
+                    <p class="text-xs text-pastel-muted leading-relaxed">Expanded service area visibility across 5 target suburbs with dedicated local SEO pages and regular profile updates.</p>
+                </div>
+            </div>
+            <div class="bg-white border border-pastel-border rounded-2xl overflow-hidden shadow-sm">
+                <div class="h-36 bg-pastel-badge flex items-center justify-center text-pastel-accent">
+                    <i class="fa-solid fa-fan text-4xl"></i>
+                </div>
+                <div class="p-5 space-y-2">
+                    <span class="inline-block text-[10px] font-bold uppercase text-pastel-badgeText bg-pastel-badge px-2 py-1 rounded-full">Lead Tier · HVAC</span>
+                    <h3 class="font-bold text-pastel-heading text-sm">HVAC &amp; Air Conditioning Contractor</h3>
+                    <p class="text-xs text-pastel-muted leading-relaxed">Managed Google Search Ad funnels driving high-value installation quotes with real-time call tracking.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="px-6 py-16">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Left -->
+        <div class="space-y-6">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-pastel-heading">Let's Discuss Your Business Growth</h2>
+            <p class="text-sm text-pastel-muted leading-relaxed">Ready to stop chasing leads? Get in touch with us to select a package or ask questions about our service model.</p>
+
+            <a href="mailto:schalkvanstadenn@gmail.com?subject=Enquiry%20from%20Project%20Bluecollar%20website"
+               class="inline-flex items-center gap-2 bg-pastel-accent hover:bg-pastel-accentHover text-white font-semibold px-5 py-3 rounded-xl transition text-sm shadow-sm">
+                <i class="fa-solid fa-envelope"></i> Email Us
+            </a>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                <div class="bg-white border border-pastel-border rounded-xl p-4">
+                    <p class="text-[11px] font-bold uppercase text-pastel-muted mb-1">Operating Hours</p>
+                    <p class="text-sm text-pastel-heading font-medium">Mon – Fri, 08:00 – 17:00 (SAST)</p>
+                </div>
+                <div class="bg-white border border-pastel-border rounded-xl p-4">
+                    <p class="text-[11px] font-bold uppercase text-pastel-muted mb-1">Service Area</p>
+                    <p class="text-sm text-pastel-heading font-medium">Nationwide, South Africa</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="bg-white border border-pastel-border rounded-2xl p-6 shadow-sm">
+            <form id="enquiry-form" class="space-y-4">
+                <div>
+                    <label class="text-xs font-semibold text-pastel-heading">Full Name</label>
+                    <input required type="text" name="name" class="mt-1 w-full border border-pastel-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pastel-accent">
+                </div>
+                <div>
+                    <label class="text-xs font-semibold text-pastel-heading">Business Name</label>
+                    <input required type="text" name="business" class="mt-1 w-full border border-pastel-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pastel-accent">
+                </div>
+                <div>
+                    <label class="text-xs font-semibold text-pastel-heading">Trade Specialty</label>
+                    <select name="trade" class="mt-1 w-full border border-pastel-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pastel-accent">
+                        <option>Plumbing</option>
+                        <option>Electrical</option>
+                        <option>Handyman / General</option>
+                        <option>Roofing / Paving</option>
+                        <option>HVAC</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="text-xs font-semibold text-pastel-heading">Email Address</label>
+                        <input required type="email" name="email" class="mt-1 w-full border border-pastel-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pastel-accent">
+                    </div>
+                    <div>
+                        <label class="text-xs font-semibold text-pastel-heading">Phone Number</label>
+                        <input required type="tel" name="phone" class="mt-1 w-full border border-pastel-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pastel-accent">
+                    </div>
+                </div>
+                <div>
+                    <label class="text-xs font-semibold text-pastel-heading">Interested Package</label>
+                    <select name="package" class="mt-1 w-full border border-pastel-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pastel-accent">
+                        <option>Foundation - R1,250</option>
+                        <option>Growth - R3,450</option>
+                        <option>Lead - R7,500</option>
+                        <option>General Inquiry</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="text-xs font-semibold text-pastel-heading">Message (Optional)</label>
+                    <textarea name="message" rows="3" class="mt-1 w-full border border-pastel-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pastel-accent"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-pastel-accent hover:bg-pastel-accentHover text-white font-semibold py-3 rounded-xl transition text-sm shadow-sm">Send Enquiry</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="px-6 py-10 bg-pastel-softBg border-t border-pastel-border">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-pastel-accent flex items-center justify-center text-white font-bold text-xs">PB</div>
+            <div>
+                <p class="font-bold text-pastel-heading text-sm">Project Bluecollar</p>
+                <p class="text-[11px] text-pastel-muted">Outsourced Digital Marketing for Local Trades</p>
+            </div>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-5 text-xs font-medium text-pastel-text">
+            <a href="#home" class="hover:text-pastel-accent transition">Home</a>
+            <a href="#why-us" class="hover:text-pastel-accent transition">Why Us</a>
+            <a href="#packages" class="hover:text-pastel-accent transition">Packages</a>
+            <a href="#portfolio" class="hover:text-pastel-accent transition">Portfolio</a>
+            <a href="#contact" class="hover:text-pastel-accent transition">Contact</a>
+        </div>
+        <a href="mailto:schalkvanstadenn@gmail.com" class="inline-flex items-center gap-2 bg-white border border-pastel-border hover:bg-pastel-badge text-pastel-heading text-xs font-semibold px-4 py-2 rounded-lg transition">
+            <i class="fa-solid fa-envelope"></i> Email Us
+        </a>
+    </div>
+    <p class="text-center text-[11px] text-pastel-muted mt-8">© 2026 Project Bluecollar. All rights reserved.</p>
+</footer>
+
+<script>
+    // Build a mailto link from the enquiry form so it works with no backend server.
+    document.getElementById('enquiry-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const f = e.target;
+        const subject = encodeURIComponent('New Enquiry from ' + f.business.value + ' (' + f.name.value + ')');
+        const body = encodeURIComponent(
+            'Name: ' + f.name.value + '\n' +
+            'Business: ' + f.business.value + '\n' +
+            'Trade Specialty: ' + f.trade.value + '\n' +
+            'Email: ' + f.email.value + '\n' +
+            'Phone: ' + f.phone.value + '\n' +
+            'Interested Package: ' + f.package.value + '\n' +
+            'Message: ' + (f.message.value || '—')
+        );
+        window.location.href = 'mailto:schalkvanstadenn@gmail.com?subject=' + subject + '&body=' + body;
+    });
+</script>
+
+</body>
+</html>
