@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Project Bluecollar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+                colors: {
+                    pastel: {
+                        bg: '#FDF8F3', card: '#FFFFFF', border: '#EFE1D1', text: '#4A3F35',
+                        heading: '#2B2420', accent: '#D97A57', accentHover: '#C2643F',
+                        secondary: '#E3A857', softBg: '#FBEEE0', badge: '#F6DCC5',
+                        badgeText: '#9C4A1F', muted: '#8A7A6B',
+                    }
+                }
+            }
+        }
+    }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background-color: #FDF8F3; scroll-behavior: smooth; }
+</style>
+</head>
+<body class="text-pastel-text font-sans">
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-pastel-bg/90 backdrop-blur border-b border-pastel-border">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-pastel-accent flex items-center justify-center text-white font-bold text-sm">PB</div>
+            <span class="font-extrabold text-pastel-heading text-lg">Project Bluecollar</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-pastel-text">
+            <a href="index.html" class="hover:text-pastel-accent transition">Home</a>
+            <a href="index.html#why-us" class="hover:text-pastel-accent transition">Why Us</a>
+            <a href="packages.html" class="hover:text-pastel-accent transition">Packages</a>
+            <a href="portfolio.html" class="hover:text-pastel-accent transition">Portfolio</a>
+            <a href="contact.html" class="text-pastel-accent">Contact</a>
+        </div>
+        <div class="flex items-center gap-3">
+            <a href="https://wa.me/27615939447" target="_blank" rel="noopener" class="hidden sm:inline-block bg-pastel-accent hover:bg-pastel-accentHover text-white text-sm font-semibold px-5 py-2.5 rounded-xl transition shadow-sm">Get Started</a>
+            <button id="menu-btn" class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg border border-pastel-border text-pastel-heading" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fa-solid fa-bars text-lg" id="menu-icon"></i>
+            </button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-pastel-border bg-pastel-bg">
+        <div class="px-6 py-4 flex flex-col gap-4 text-sm font-medium text-pastel-text">
+            <a href="index.html" class="hover:text-pastel-accent transition">Home</a>
+            <a href="index.html#why-us" class="hover:text-pastel-accent transition">Why Us</a>
+            <a href="packages.html" class="hover:text-pastel-accent transition">Packages</a>
+            <a href="portfolio.html" class="hover:text-pastel-accent transition">Portfolio</a>
+            <a href="contact.html" class="text-pastel-accent">Contact</a>
+            <a href="https://wa.me/27615939447" target="_blank" rel="noopener" class="bg-pastel-accent text-white text-center font-semibold px-5 py-2.5 rounded-xl">Get Started</a>
+        </div>
+    </div>
+</nav>
+
+<!-- CONTACT -->
+<section class="px-6 py-14">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Left -->
+        <div class="space-y-6">
+            <h1 class="text-2xl md:text-3xl font-extrabold text-pastel-heading">Let's Discuss Your Business Growth</h1>
+            <p class="text-sm text-pastel-muted leading-relaxed">Ready to stop chasing leads? Get in touch with us to select a package or ask questions about our service model.</p>
+
+            <a href="https://wa.me/27615939447?text=Hi%20Project%20Bluecollar%2C%20I%27d%20like%20to%20find%20out%20more%20about%20your%20packages."
+               target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 bg-pastel-accent hover:bg-pastel-accentHover text-white font-semibold px-5 py-3 rounded-xl transition text-sm shadow-sm">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Chat on WhatsApp
+            </a>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                <div class="bg-white border border-pastel-border rounded-xl p-4">
+                    <p class="text-[11px] font-bold uppercase text-pastel-muted mb-1">Operating Hours</p>
+                    <p class="text-sm text-pastel-heading font-medium">Mon – Fri, 08:00 – 17:00 (SAST)</p>
+                </div>
+                <div class="bg-white border border-pastel-border rounded-xl p-4">
+                    <p class="text-[11px] font-bold uppercase text-pastel-muted mb-1">Service Area</p>
+                    <p class="text-sm text-pastel-heading font-medium">Nationwide, South Africa</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="bg-white border border-pastel-border rounded-2xl p-6 shadow-sm">
+            <form id="enquiry-form" class="space-y-4">
+                <div>
+                    <label class="text-xs font-semibold text-pastel-heading">Full Name</label>
+                    <input required type="text" name="name" class="mt-1 w-full border border-pastel-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pastel-accent">
+                </div>
+                <div>
+                    <label class="text-xs font-semibold text-pastel-heading">Business Name</label>
+                    <input required type="text" name="business" class="mt-1 w-full border border-pastel-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pastel-accent">
+                </div>
+                <div>
+                    <label class="text-xs font-semibold text-pastel-heading">Trade Specialty</label>
+                    <select name="trade" class="mt-1 w-full border border-pastel-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pastel-accent">
+                        <option>Plumbing</option>
+                        <option>Electrical</option>
+                        <option>Handyman / General</option>
+                        <option>Roofing / Paving</option>
+                        <option>HVAC</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="text-xs font-semibold text-pastel-heading">Email Address</label>
+                        <input required type="email" name="email" class="mt-1 w-full border border-pastel-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pastel-accent">
+                    </div>
+                    <div>
+                        <label class="text-xs font-semibold text-pastel-heading">Phone Number</label>
+                        <input required type="tel" name="phone" class="mt-1 w-full border border-pastel-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pastel-accent">
+                    </div>
+                </div>
+                <div>
+                    <label class="text-xs font-semibold text-pastel-heading">Interested Package</label>
+                    <select name="package" class="mt-1 w-full border border-pastel-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pastel-accent">
+                        <option>Foundation - R1,250</option>
+                        <option>Growth - R3,450</option>
+                        <option>Lead - R7,500</option>
+                        <option>General Inquiry</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="text-xs font-semibold text-pastel-heading">Message (Optional)</label>
+                    <textarea name="message" rows="3" class="mt-1 w-full border border-pastel-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pastel-accent"></textarea>
+                </div>
+                <button type="submit" class="w-full inline-flex items-center justify-center gap-2 bg-pastel-accent hover:bg-pastel-accentHover text-white font-semibold py-3 rounded-xl transition text-sm shadow-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Send via WhatsApp
+                </button>
+                <p class="text-[10px] text-pastel-muted text-center">This opens WhatsApp with your details pre-filled so you can review and send.</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="px-6 py-10 bg-pastel-softBg border-t border-pastel-border">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-pastel-accent flex items-center justify-center text-white font-bold text-xs">PB</div>
+            <div>
+                <p class="font-bold text-pastel-heading text-sm">Project Bluecollar</p>
+                <p class="text-[11px] text-pastel-muted">Outsourced Digital Marketing for Local Trades</p>
+            </div>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-5 text-xs font-medium text-pastel-text">
+            <a href="index.html" class="hover:text-pastel-accent transition">Home</a>
+            <a href="index.html#why-us" class="hover:text-pastel-accent transition">Why Us</a>
+            <a href="packages.html" class="hover:text-pastel-accent transition">Packages</a>
+            <a href="portfolio.html" class="hover:text-pastel-accent transition">Portfolio</a>
+            <a href="contact.html" class="hover:text-pastel-accent transition">Contact</a>
+        </div>
+        <a href="https://wa.me/27615939447" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white border border-pastel-border hover:bg-pastel-badge text-pastel-heading text-xs font-semibold px-4 py-2 rounded-lg transition">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+        </a>
+    </div>
+    <p class="text-center text-[11px] text-pastel-muted mt-8">© 2026 Project Bluecollar. All rights reserved.</p>
+</footer>
+
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    menuBtn.addEventListener('click', () => {
+        const isOpen = !mobileMenu.classList.contains('hidden');
+        mobileMenu.classList.toggle('hidden');
+        menuBtn.setAttribute('aria-expanded', String(!isOpen));
+        menuIcon.classList.toggle('fa-bars');
+        menuIcon.classList.toggle('fa-xmark');
+    });
+
+    // Build a WhatsApp deep link from the enquiry form instead of an email — no backend needed.
+    document.getElementById('enquiry-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const f = e.target;
+        const message =
+            'New Enquiry from Project Bluecollar website\n' +
+            'Name: ' + f.name.value + '\n' +
+            'Business: ' + f.business.value + '\n' +
+            'Trade Specialty: ' + f.trade.value + '\n' +
+            'Email: ' + f.email.value + '\n' +
+            'Phone: ' + f.phone.value + '\n' +
+            'Interested Package: ' + f.package.value + '\n' +
+            'Message: ' + (f.message.value || '—');
+        const url = 'https://wa.me/27615939447?text=' + encodeURIComponent(message);
+        window.open(url, '_blank');
+    });
+</script>
+
+</body>
+</html>
